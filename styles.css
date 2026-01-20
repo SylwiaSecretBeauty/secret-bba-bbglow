@@ -141,8 +141,8 @@ a {
     border-radius: 14px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 
-    /* 🔑 WICHTIG: Fix, damit der Hero-Button klickbar bleibt */
-    pointer-events: none;
+    /* 🔑 Fix für klickbaren Button */
+    pointer-events: none; /* Video blockiert keine Klicks mehr */
 }
 
 /* =========================
@@ -157,9 +157,9 @@ a {
     transition: var(--transition);
     text-align: center;
 
-    /* 🔑 Fix: Button liegt über Video */
+    /* Sicherstellen, dass Button über Video liegt */
     position: relative;
-    z-index: 10;
+    z-index: 2;
 }
 
 .btn-primary {
